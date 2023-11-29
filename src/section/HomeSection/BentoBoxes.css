@@ -1,7 +1,9 @@
+/* Main CSS */
 .grid-wrapper > div {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .grid-wrapper > div > img {
   width: 100%;
@@ -16,13 +18,40 @@
   grid-auto-rows: 200px;
   grid-auto-flow: dense;
 }
+
 .grid-wrapper .wide {
   grid-column: span 2;
 }
+
+.grid-wrapper .wider {
+  grid-column: span 3;
+}
+
 .grid-wrapper .tall {
   grid-row: span 2;
 }
+
 .grid-wrapper .big {
   grid-column: span 2;
   grid-row: span 2;
+}
+
+.grid-wrapper .bigger {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+@media (max-width: 600px) {
+  .grid-wrapper {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 150px; /* Adjust the row height for smaller screens */
+  }
+
+  .grid-wrapper .wide,
+  .grid-wrapper .wider,
+  .grid-wrapper .tall,
+  .grid-wrapper .big,
+  .grid-wrapper .bigger {
+    grid-column: span 2 !important; /* Force items to take one column on small screens */
+  }
 }

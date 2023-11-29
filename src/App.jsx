@@ -4,9 +4,9 @@ import HomePage from "./pages/HomePage";
 function App() {
   return (
     <>
-      <section className="flex min-h-screen justify-center  max-lg:flex-row dark:bg-[#262626]">
+      <section className="relative maxcontainer flex min-h-screen justify-center  max-lg:flex-row dark:bg-[#1b1b1b]">
         <SideNav />
-        <div className="w-[70%] max-lg:w-[100%]   ">
+        <div className="w-[75%] max-lg:w-[100%]  ">
           <Router>
             <Routes>
               <Route path="/" element={<HomePage />} />

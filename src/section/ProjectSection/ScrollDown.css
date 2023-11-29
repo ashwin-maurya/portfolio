@@ -1,0 +1,107 @@
+.parent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip: rect(0, auto, auto, 0);
+  backface-visibility: hidden;
+  scroll-behavior: smooth;
+}
+
+.child {
+  position: sticky;
+  top: 10px;
+  scroll-behavior: smooth;
+}
+
+.scroll-down {
+  width: 31px;
+  height: 54px;
+  border-radius: 68px;
+  padding: 6px 0;
+  transition: height 0.25s ease;
+}
+
+.scroll-down-text {
+  color: black;
+  display: inline-block;
+  writing-mode: vertical-lr;
+  height: 200px;
+}
+.scroll-down-text span {
+  font-size: 11px;
+  text-orientation: upright;
+  font-weight: 800;
+  text-shadow: 2px 2px 1px red;
+}
+.scroll-down .glyphicon-chevron-down {
+  color: red;
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.scroll-down .glyphicon-chevron-down:nth-child(1) {
+  animation: opacityChange1 0.7s infinite;
+}
+
+.scroll-down .glyphicon-chevron-down:nth-child(2) {
+  animation: opacityChange2 0.7s infinite;
+}
+
+.scroll-down .glyphicon-chevron-down:nth-child(3) {
+  animation: opacityChange3 0.7s infinite;
+}
+.scroll-down .glyphicon-chevron-down:nth-child(4) {
+  animation: opacityChange1 0.7s infinite;
+}
+
+.scroll-down .glyphicon-chevron-down:nth-child(5) {
+  animation: opacityChange2 0.7s infinite;
+}
+
+.scroll-down .glyphicon-chevron-down:nth-child(6) {
+  animation: opacityChange3 0.7s infinite;
+}
+.scroll-down .glyphicon-chevron-down:nth-child(7) {
+  animation: opacityChange1 0.7s infinite;
+}
+
+.scroll-down .glyphicon-chevron-down:nth-child(8) {
+  animation: opacityChange2 0.7s infinite;
+}
+
+.scroll-down .glyphicon-chevron-down:nth-child(9) {
+  animation: opacityChange3 0.7s infinite;
+}
+
+@keyframes opacityChange1 {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  33% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacityChange2 {
+  0%,
+  33%,
+  100% {
+    opacity: 0.2;
+  }
+  66% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacityChange3 {
+  0%,
+  66% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}

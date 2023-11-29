@@ -11,3 +11,13 @@
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  overflow-x: hidden;
+}
+@layer components {
+  .maxcontainer {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+}

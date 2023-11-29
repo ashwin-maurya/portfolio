@@ -23,6 +23,9 @@ export default function ScrollDown() {
             </div>
           </div>
         </div>
+        <div className="w-[50%] text-2xl font-bold mb-5 font-mono capitalize">
+          I design and develop websites for passion.
+        </div>
       </div>
     </>
   );

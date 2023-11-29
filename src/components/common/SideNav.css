@@ -1,7 +1,8 @@
 .social ul {
   padding: 0px;
 }
-.social ul li {
+.social ul li a {
+  letter-spacing: 0.5px;
   display: block;
   margin: 5px;
   background: rgba(0, 0, 0, 0.916);

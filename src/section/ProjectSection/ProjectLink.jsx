@@ -4,8 +4,8 @@ import "./ProjectLink.css";
 export default function ProjectLink() {
   return (
     <>
-      <div className="relative">
-        <div className="hero-banner">
+      <div className="relative py-10">
+        <div className="hero-banner relative">
           <h1 className="hero-banner__title">View Projects</h1>
           <img
             className="hero-banner__image"

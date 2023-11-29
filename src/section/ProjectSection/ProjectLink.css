@@ -7,7 +7,7 @@
 
 .hero-banner__title {
   color: red;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 700;
   position: absolute;
   text-align: center;
@@ -20,7 +20,7 @@
 }
 
 .hero-banner__image {
-  height: 200px;
+  height: 150px;
   width: 200px;
   clip-path: polygon(75% 0%, 75% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
   transition: all ease-in 0.2s;
@@ -28,4 +28,10 @@
 .hero-banner:hover .hero-banner__image {
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
   background-color: red;
+}
+@media (max-width: 600px) {
+  .hero-banner__image {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    transition: all ease-in 0.2s;
+  }
 }

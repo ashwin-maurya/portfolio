@@ -76,18 +76,21 @@ export default function SideNav() {
               <nav className="social">
                 <ul>
                   <li>
-                    <a href="/">
-                      Github <i className="fa fa-github"></i>
+                    <a href="https://github.com/ashwin-maurya" target="_blank">
+                      github/ashwin-maurya <i className="fa fa-github"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="/">
-                      Linkedin <i className="fa fa-linkedin"></i>
+                    <a
+                      href="https://www.linkedin.com/in/ashwin-maurya/"
+                      target="_blank"
+                    >
+                      linkedin/ashwin-maurya <i className="fa fa-linkedin"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="/">
-                      Codepen <i className="fa fa-codepen"></i>
+                    <a href="https://codepen.io/ashwin-maurya" target="_blank">
+                      codepen/ashwin-maurya <i className="fa fa-codepen"></i>
                     </a>
                   </li>
                 </ul>

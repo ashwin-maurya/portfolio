@@ -3,7 +3,7 @@ import "./ScrollDown.css";
 export default function ScrollDown() {
   return (
     <>
-      <div className="relative">
+      <div className="relative max-sm:my-5 max-sm:mb-20 h-full w-full">
         <div className="parent">
           <div className="child">
             <div className="scroll-down flex">
@@ -23,7 +23,7 @@ export default function ScrollDown() {
             </div>
           </div>
         </div>
-        <div className="w-[50%] text-2xl font-bold mb-5 font-mono capitalize">
+        <div className="w-[60%] text-2xl h-full flex justify-center items-center max-sm:text-[35px] font-bold mb-5 max-sm:mb-0 font-mono capitalize ">
           I design and develop websites for passion.
         </div>
       </div>

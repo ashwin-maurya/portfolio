@@ -89,7 +89,7 @@ export default function HeroInfo() {
         <div className="w-full h-full group text-center relative uppercase overflow-hidden">
           <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
             <span className="overflow-hidden block w-full">
-              <span className="opacity-0 group-hover:opacity-100 text-[red] relative right-1/4 transform top-10 group-hover:top-0  transition-all ease-linear max-sm:top-0 max-sm:opacity-100  duration-300">
+              <span className="opacity-0 group-hover:opacity-100 text-[#3367D1] relative right-1/4 transform top-10 group-hover:top-0  transition-all ease-linear max-sm:top-0 max-sm:opacity-100  duration-300">
                 Content Writer
               </span>
             </span>

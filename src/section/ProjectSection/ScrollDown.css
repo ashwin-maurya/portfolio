@@ -31,10 +31,10 @@
   font-size: 11px;
   text-orientation: upright;
   font-weight: 800;
-  text-shadow: 2px 2px 1px red;
+  text-shadow: 2px 2px 1px #183163;
 }
 .scroll-down .glyphicon-chevron-down {
-  color: red;
+  color: #3367d1;
   display: block;
   width: 100%;
   font-size: 20px;

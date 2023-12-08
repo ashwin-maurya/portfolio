@@ -41,7 +41,7 @@ export default function ScrollDown() {
 
   return (
     <>
-      <div className="relative max-sm:my-5 max-sm:mb-20 h-full w-full flex justify-center items-center min-h-[150px]">
+      <div className="relative tall max-sm:my-5 max-sm:mb-20 h-full w-full  min-h-[150px]">
         <div className="parent">
           <div className="child">
             <div className="scroll-down flex">
@@ -61,12 +61,11 @@ export default function ScrollDown() {
             </div>
           </div>
         </div>
-        <div className="w-[60%] text-[30px] h-full  justify-center text-right max-sm:justify-end items-center max-sm:text-[35px] font-bold max-sm:mb-0 font-mono capitalize max-h-[150px] leading-[3rem] absolute right-0">
+        <div className="quote w-[70%] max-lg:w-[80%] text-[50px] h-full   text-right max-sm:justify-end max-sm:text-[40px] font-bold tracking-wider max-sm:mb-0 capitalize max-h-[150px] leading-[6rem] absolute top-0 mr-3 right-0">
           {randomOrder.map((originalIndex, index) => (
             <span
               key={index}
               style={{
-                transform: `translate(${finalPositions[originalIndex].x}em, ${finalPositions[originalIndex].y}em)`,
                 display: index < currentIndex ? "inline" : "none",
               }}
             >

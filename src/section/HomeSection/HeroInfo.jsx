@@ -93,7 +93,7 @@ export default function HeroInfo() {
                 Content Writer
               </span>
             </span>
-            <span className="text-[86px] max-lg:text-[75px] max-md:text-[70px] max-sm:text-[45px] leading-[5.5rem]  w-[100%] font-bold flex justify-center items-center">
+            <span className="text-[86px] max-lg:text-[75px] max-md:text-[70px] max-sm:text-[42px] leading-[5.5rem]  w-[100%] font-bold flex justify-center items-center max-sm:leading-[3rem]">
               <span className="overflow-hidden block w-full">
                 <span className="relative text-white top-12 group-hover:-top-0 max-sm:-top-0 transition-all ease-linear  duration-200">
                   Ashwin
@@ -123,7 +123,7 @@ export default function HeroInfo() {
               backgroundImage: `url(${images[rightImageIndex].img})`,
             }}
           ></div>
-          <div className="w-full absolute h-full bg-[rgba(0,0,0,.7)] z-10 "></div>
+          <div className="w-full absolute h-full bg-[rgba(0,0,0,.4)] z-10 "></div>
         </div>
       </div>
     </>

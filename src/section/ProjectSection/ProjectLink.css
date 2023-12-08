@@ -16,22 +16,40 @@
 
 .hero-banner__stroked-title {
   color: transparent;
-  -webkit-text-stroke: 2px red;
+  -webkit-text-stroke: 2.5px red;
 }
 
 .hero-banner__image {
   height: 150px;
-  width: 200px;
+  width: 180px;
+  background: url("https://images.unsplash.com/photo-1546707012-c46675f12716?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   clip-path: polygon(75% 0%, 75% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
   transition: all ease-in 0.2s;
+  animation: arrow 3s infinite;
+  transform: rotate(90deg);
 }
+
 .hero-banner:hover .hero-banner__image {
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-  background-color: red;
 }
 @media (max-width: 600px) {
   .hero-banner__image {
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-    transition: all ease-in 0.2s;
+    transition: all 0.7s;
+  }
+}
+@keyframes arrow {
+  0% {
+    transform: translateX(-250px);
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  }
+  40% {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  }
+  100% {
+    transform: translateX(300px);
   }
 }
